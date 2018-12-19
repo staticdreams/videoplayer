@@ -743,23 +743,6 @@ export default class VideoPlayer extends React.Component {
               {this._getMMSSFromMillis(this.state.playbackInstanceDuration)}
             </Text>
 
-            {/* Fullscreen control */}
-            {this.props.showFullscreenButton && (
-              <Control
-                style={{ backgroundColor: 'transparent' }}
-                center={false}
-                callback={() => {
-                  this.props.isPortrait
-                    ? this.props.switchToLandscape()
-                    : this.props.switchToPortrait();
-                }}>
-                {this.props.isPortrait ? (
-                  <FullscreenEnterIcon />
-                ) : (
-                  <FullscreenExitIcon />
-                )}
-              </Control>
-            )}
           </Animated.View>
         </View>
       </TouchableWithoutFeedback>
