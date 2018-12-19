@@ -593,7 +593,7 @@ export default class VideoPlayer extends React.Component {
           {
             position: 'absolute',
             left: (videoWidth - centeredContentWidth) / 2,
-            top: (videoHeight - centeredContentWidth) / 2,
+            top: '50%',
             width: centeredContentWidth,
             height: centeredContentWidth,
             flexDirection: 'column',
